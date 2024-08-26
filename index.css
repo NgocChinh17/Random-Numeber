@@ -1,0 +1,100 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 120vh;
+  margin: 0;
+  margin-left: 100px;
+  background: linear-gradient(135deg, #f9f9f9, #ececec);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  width: 200px;
+  margin-bottom: 10px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+  border-color: #0056b3;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+  outline: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#numberContainer {
+  width: 1200px;
+  height: 600px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.number {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  position: absolute;
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+
+.number:hover {
+  transform: scale(1.1);
+  background-color: #218838;
+}
+
+#timer {
+  font-size: 18px;
+  color: #333;
+}
+
+#timer span {
+  font-weight: bold;
+}
+
+.span {
+  font-size: 25px;
+}
+
+#playButton {
+  width: 100px;
+  margin-top: 6px;
+}
